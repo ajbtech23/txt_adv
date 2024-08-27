@@ -2,6 +2,8 @@ def get_player_command():
     return input('Action: \n')
 
 def play():
+    inventory = ['Dagger', 'Gold(5)', 'Crusty Bread']
+
     print("Escape from Greed Island -____-!")
     action_input = get_player_command()
 
@@ -13,6 +15,10 @@ def play():
         print(action_input + " as described in the prophetic by the our great Oracle...")
     elif action_input == 'w' or action_input == 'W' or action_input == 'WEST':
         print(action_input + " promises us great riches like no other!")
+    elif action_input == 'i' or action_input == 'I' or action_input == 'INVENTORY':
+        print("Inventory: ")
+        for item in inventory:
+            print(f"You can use this item to help you: {item}")
     else:
         print("You\'ve doomed us all...")
 
