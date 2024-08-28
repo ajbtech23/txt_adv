@@ -20,7 +20,7 @@ arr_fresh_goods = []
 is_user_still_shopping = True
 
 def get_user_selection():
-    return input("What would you like to chuck into the cart today?\n")
+    return input("\nWhat would you like to chuck into the cart today?\n")
 
 while is_user_still_shopping:
     user_selection = get_user_selection()
@@ -34,5 +34,9 @@ while is_user_still_shopping:
 
 for i in range(len(arr_fresh_goods)):
     print(f"{i + 1}. {arr_fresh_goods[i]}")
+
+for good in arr_fresh_goods:
+    print(f"* {good}")
+
 
 print("There's always something...")
