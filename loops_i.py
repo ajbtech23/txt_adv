@@ -1,6 +1,11 @@
 def pretty_print_unordered(to_print):
+    i = 1
     for item in to_print:
-        print("* " + str(item))
+        print(f"{i}* " + str(item))
+        i += 1
+
+    for i in range(len(to_print)): # Len first gives you the absolute value scalar size of the array e.g. 5; and then range creates a zero based index arr with 5 elements [0, 1, 2, 3, 4]
+        print(str(i + 1) + ". " + str(to_print[i]))
 
 
 favorites = []
