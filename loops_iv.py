@@ -15,3 +15,8 @@ i = 0
 for player in arr_nba_roster:
     print(f"At the {i + 1} we have {player}")
     i += 1
+
+print("\n")
+
+for player in arr_nba_roster:
+    print(f"* {player}")
