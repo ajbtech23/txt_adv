@@ -14,6 +14,10 @@ def pretty_print_ordered_range_way(arr):
     for i in range(len(arr)):
         print(f"At the {i + 1} we have {arr[i]} - the reigning MVP!")
 
+def pretty_print_ordered_enumerate_way(arr):
+    for i, value in enumerate(arr, 1):
+        print(f"At the {i} we have {value} - a modern great!")
+
 
 arr_roster = []
 more_players = True
@@ -32,3 +36,5 @@ print("")
 pretty_print_ordered(arr_roster)
 print("")
 pretty_print_ordered_range_way(arr_roster)
+print("")
+pretty_print_ordered_enumerate_way(arr_roster)
