@@ -2,7 +2,7 @@ def get_action_input():
     return input("What would you like to do?\n")
 
 def play():
-    arr_inventory = ['Dagger', 'Gold(5)', 'Crusty Bread']
+    arr_inventory = ['Dagger', 'Gold(5)', 'Crusty Bread', 'Great Axe']
     user_still_active = True
     print("Welcome to Greed Island -_____-")
 
