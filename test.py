@@ -19,6 +19,6 @@ hypoteneuse = 5
 pythagoras = (a**2) + (b**2)
 
 if pythagoras == (hypoteneuse**2):
-    print("So far so good")
+    print("So far so good - only up from here!")
 else:
     print('You\'ve made a mistake somewhere lol')
